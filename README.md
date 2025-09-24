@@ -1,5 +1,3 @@
-![LibreSpeed Logo](https://github.com/librespeed/speedtest-go/blob/master/.logo/logo3.png?raw=true)
-
 # LibreSpeed
 
 No Flash, No Java, No WebSocket, No Bullshit.
@@ -25,8 +23,6 @@ Works with mobile versions too.
 * Compatible with PHP frontend predefined endpoints (with `.php` suffixes)
 * Supports [Proxy Protocol](https://www.haproxy.org/download/2.3/doc/proxy-protocol.txt) (without TLV support yet)
 
-![Screencast](https://speedtest.zzz.cat/speedtest.webp)
-
 ## Server requirements
 * Any [Go supported platforms](https://github.com/golang/go/wiki/MinimumRequirements)
 * BoltDB, PostgreSQL or MySQL database to store test results (optional)
@@ -47,16 +43,16 @@ Works with mobile versions too.
 You can use an Ansible role for installing speedtest-go easily. You can find the role on the [Ansible galaxy](https://galaxy.ansible.com/flymia/ansible_speedtest_go). There is a [separate repository](https://github.com/flymia/ansible-speedtest_go) for documentation about the Ansible role.
 ### Compile from source
 
-You need Go 1.16+ to compile the binary. If you have an older version of Go and don't want to install the tarball
+You need Go 1.24+ to compile the binary. If you have an older version of Go and don't want to install the tarball
 manually, you can install newer version of Go into your `GOPATH`:
 
-0. Install Go 1.17
+0. Install Go 1.25
 
    ```
-   $ go get golang.org/dl/go1.17.1
-   # Assuming your GOPATH is default (~/go), Go 1.17.1 will be installed in ~/go/bin
-   $ ~/go/bin/go1.17.1 version
-   go version go1.17.1 linux/amd64
+   $ go get golang.org/dl/go1.25.1
+   # Assuming your GOPATH is default (~/go), Go 1.25.1 will be installed in ~/go/bin
+   $ ~/go/bin/go1.25.1 version
+   go version go1.25.1 linux/amd64
    ```
 
 1. Clone this repository:
